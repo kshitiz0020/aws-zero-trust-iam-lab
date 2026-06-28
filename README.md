@@ -7,10 +7,10 @@ This project demonstrates a production-ready Identity & Access Management (IAM) 
 
 | User Name | Assigned Group | AWS Managed Policy Attached | Access Level Description | Zero Trust Control Applied |
 | :--- | :--- | :--- | :--- | :--- |
-| **AliceGreen** | `Marketing-Dept-Group` | `ReadOnlyAccess` | Can view files/dashboards; cannot delete or create things. | **Least Privilege**: Prevents accidental data deletion by a new hire. |
-| **BobVance** | `Marketing-Dept-Group` | `ReadOnlyAccess` | Same as Alice, but holds managerial oversight. | **Role-Based Isolation**: Group-assigned access matches his department. |
-| **CharlieSmith** | `Contractor-External-Group` | `SecurityAudit` | Can read configuration settings but cannot view actual company data. | **Data Minimization**: Third-party vendors cannot access private data. |
-| **DavidMiller** | `IT-Admins-Privileged-Group` | `AdministratorAccess` + Custom MFA Policy | Full control over the entire cloud infrastructure. | **Conditional Deny**: Admin powers are completely frozen unless active MFA code is typed. |
+| **Keshav_sharma** | `Marketing-Dept-Group` | `ReadOnlyAccess` | Can view files/dashboards; cannot delete or create things. | **Least Privilege**: Prevents accidental data deletion by a new hire. |
+| **Aysuh_sharma** | `Marketing-Dept-Group` | `ReadOnlyAccess` | Same as Alice, but holds managerial oversight. | **Role-Based Isolation**: Group-assigned access matches his department. |
+| **Lucky_sharma** | `Contractor-External-Group` | `SecurityAudit` | Can read configuration settings but cannot view actual company data. | **Data Minimization**: Third-party vendors cannot access private data. |
+| **Kshitiz_Sharma** | `IT-Admins-Privileged-Group` | `AdministratorAccess` + Custom MFA Policy | Full control over the entire cloud infrastructure. | **Conditional Deny**: Admin powers are completely frozen unless active MFA code is typed. |
 
 ## 🔐 Custom MFA Enforcement Policy (JSON)
 ```json
